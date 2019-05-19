@@ -1,0 +1,157 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="400px" />
+    <mj-attributes>
+      <mj-class name="textTitle"
+        align="center"
+        font-size="20px"
+      />
+      <mj-class name="nopadding"
+        padding="0px"
+      />
+    </mj-attributes>
+    <mj-style>
+      .flight tr{
+        line-height:20px
+      }
+      .flight .num td{
+        line-height:25px;
+      }
+      .flight .date td{
+        line-height:25px;
+        padding-bottom: 5px;
+      }
+      .flight .cabin td{
+        padding: 6px;
+        background-color: rgb(141, 182, 204);
+      }
+      .flight .seat td{
+        padding: 6px;
+        background-color: rgb(208, 238, 238);
+      }
+      .detail .from, .detail .to{
+        line-height:20px
+      }
+      .airTime{
+        padding: 0;
+      }
+      .airTime td{
+        height: 26px;
+        width: 170px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+        background-color: rgb(238, 197, 145);
+      }
+      .fs16{
+        font-size: 16px;
+      }
+      .padding15{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .space_line{
+        height:10px
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body mj-class="nopadding">
+    <mj-section>
+      <mj-column width="400px">
+        <mj-image padding="0px" src="./head.png" alt="hongkongairline" />
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="nopadding">
+      <mj-column width="400px">
+        <mj-text padding="0px" mj-class="textTitle">
+          TEXT/TEXTHJ
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="nopadding">
+        <mj-column width="200px">
+          <mj-image padding="15px" src="./QRCode.png" alt="QRCode" />
+        </mj-column>
+        <mj-column width="200px">
+          <mj-text padding="10px 0 0 0">
+            <table class="flight" width="200px">
+              <tr class="num fs16">
+                <td align="left">
+                  HX145
+                </td>
+              </tr>
+              <tr class="date fs16">
+                <td align="left">
+                  18 MAY 2019
+                </td>
+              </tr>
+              <tr class="cabin fs16">
+                <td align="center">
+                  ECONOMY
+                </td>
+              </tr>
+              <tr class="seat fs16">
+                <td align="center">
+                  35J
+                </td>
+              </tr>
+            </table>
+          </mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section mj-class="nopadding">
+      <mj-column width="400px">
+        <mj-text mj-class="nopadding">
+          <table class="airTime fs16">
+            <tr class="depart">
+              <td>
+                Departure: 2020
+              </td>
+            </tr>
+            <tr class="board">
+              <td>
+                Boarding: 1930
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column width="400px">
+        <mj-text mj-class="nopadding">
+          <table class="fs16 detail">
+            <tr class="from">
+              <td class="fs16 padding15">
+                From: HONGKONG INTERNATIONAL AIRPORT
+              </td>
+            </tr>
+            <tr class="to">
+              <td class="fs16 padding15">
+                To: FUZHOU CHANGLE INTERNATIONAL AIRPORT
+              </td>
+            </tr>
+            <tr class="space_line">
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td class="fs16 padding15">
+                Please confirm the Actual Flight Time and the Boarding Gate at the airport on the day of travel
+              </td>
+            </tr>
+            <tr class="space_line">
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td class="fs16 padding15">
+                <font color="#ff6060">Warning: Please keep this Mobile Boarding Pass appropriately. Screen shot of this boarding pass would also be accepted by the check-in device.</font>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

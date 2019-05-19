@@ -1,0 +1,605 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="768px" />
+    <mj-attributes>
+      <mj-class name="middle-col" vertical-align="middle" />
+      <mj-class name="footer-col"
+        font-size="16px"
+        color="#555"
+        line-height="24px"
+      />
+      <mj-class name="footer-wraper"
+        background-color="#F8F1F4"
+        padding="10px 20px"
+      />
+      <mj-all
+        font-family="'Microsoft YaHei', 'Microsoft JhengHei', 'Noto-Sans-CJK-JP', 'Noto-Sans-Thai', sans-serif"
+        font-size="14px"
+        padding="0 0"
+      />
+    </mj-attributes>
+    <mj-style>
+      @media screen and (min-width: 768px) {
+        .travel-info-area .banner-info div {
+          font-size: 20px!important;
+          line-height: 30px!important;
+        }
+        .travel-info-area .flight-item.flight-info .flight-desc {
+          font-size: 16px!important;
+          font-weight: bolder!important;
+        }
+        .travel-info-area .flight-item.flight-info .flight-sub {
+          font-size: 16px!important;
+        }
+        .travel-info-area .flight-item.flight-info .left-line {
+          width: 25%!important;
+        }
+        .travel-info-area .flight-item.flight-info .right-line {
+          width: 75%!important;
+        }
+        .travel-info-area .flight-item.flight-info .line-msg {
+          vertical-align: top!important;
+        }
+        .travel-info-area .flight-item.flight-info .from-area {
+          width: 40%!important;
+        }
+        .travel-info-area .flight-item.flight-info .arrow {
+          width: 7%!important;
+        }
+        .travel-info-area .flight-item.flight-info .to-area {
+          width: 50%!important;
+        }
+        .travel-info-area .flight-item.flight-passenger .left-area b {
+          font-size: 18px!important;
+        }
+        .travel-info-area .flight-item.flight-passenger .right-area,
+        .travel-info-area .flight-item.flight-passenger .left-area {
+          width: 48%!important;
+          vertical-align: top!important;
+          font-size: 16px!important;
+        }
+        .travel-info-area .flight-item.flight-passenger .ticket-no,
+        .travel-info-area .flight-item.flight-passenger .ticket-status {
+          width: 48%!important;
+        }
+        .travel-info-area .flight-item.flight-passenger .detail-elem {
+          width: auto!important;
+          padding-right: 20px!important;
+        }
+        .travel-info-area .flight-item.flight-passenger .hidden-br {
+          display: block!important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body css-class="travel-info-area" width="1000px" background-color="#FAFAFA">
+    <mj-section>
+      <mj-column>
+        <mj-text
+          css-class="banner-info"
+          line-height="21px"
+          font-weight="600"
+          font-size="14px"
+          padding="30px 10px 40px"
+        >
+          <span>Your Excellency：</span>
+          <br>
+          <span>We </span><font color="#a70048">have checked in </font><span>online for your flight.</span>
+          <br>
+          <span>E-mail attachment for your E-boarding pass, I wish you a pleasant journey.</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      css-class="flight-item flight-info"
+      background-url="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/bg-linear.jpg"
+      background-repeat="no-repeat"
+      background-size="100% 100%"
+      padding="20px 10px"
+    >
+      <mj-group>
+        <mj-column css-class="left-line" mj-class="middle-col" width="38%">
+          <mj-table color="#fff" line-height="28px">
+            <tr>
+              <td width="30">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-flight.png"
+                  width="20"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:20px;vertical-align:middle;"
+                />
+              </td>
+              <td class="flight-desc" style="font-size: 14px;">
+                <span>Flight 1</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="30"></td>
+              <td style="font-size: 14px;">
+                <span class="flight-sub">HX606</span>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column css-class="right-line" mj-class="middle-col" width="62%">
+          <mj-text color="#fff" line-height="28px">
+            <div class="line-msg from-area" style="display:inline-block;width:100%;">
+              <b class="flight-desc">BeiJing(PEK)</b><br>
+              <span class="flight-sub">2019/03/22 12:30am</span>
+            </div>
+            <div class="line-msg arrow" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-arrow.png"
+                width="18"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:18px;vertical-align:middle;"
+              />
+            </div>
+            <div class="line-msg to-area" style="display:inline-block;width:100%;">
+              <b class="flight-desc">Auckland(AKL)</b><br>
+              <span class="flight-sub">2019/03/22 12:30am</span>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-wrapper css-class="flight-item flight-passenger" background-color="#fff" padding="10px 10px">
+      
+      <mj-section
+        css-class="psg-one psg-info"
+        padding="10px 10px"
+        border-top="1px solid #ccc"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px dashed #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="24px">
+            <div class="left-area" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-member.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:baseline;"
+              /><span>&nbsp;</span>
+              <b style="font-size:16px;">yuxuanzhai</b>
+            </div>
+            <div class="right-area" align="right" style="display:inline-block;width:100%;">
+              <div class="ticket-no" style="display:inline-block;width:100%;">
+                <b>ET：</b>
+                <span>7844495720915</span>
+              </div>
+              <div class="ticket-status" style="display:inline-block;width:100%;">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked.png"
+                  width="28"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:28px;vertical-align:basaeline;"
+                /><span>&nbsp;</span>
+                <font color="#199000">check-in</font>
+              </div>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        css-class="psg-one psg-detail"
+        padding="10px 10px"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px solid #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="36px">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-seat.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <b><font color="#592e91">Business class (J)</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-down.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>seat </span>
+              <b><font color="#333">48A</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;line-height:20px;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-cabin-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Cabin Baggage </span>
+              <b><font color="#333">1PC(7kg/PC)</font></b>
+              <b style="display:inline-block;margin-left:20px;"><a href="javascript:;"><font color="#eb0000">Baggage notice</font></a></b>
+            </div>
+            <br class="hidden-br" style="display: none;">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Checked baggage </span>
+              <b><font color="#333">10kg</font></b>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper css-class="flight-item flight-passenger" background-color="#fff" padding="10px 10px">
+      
+      <mj-section
+        css-class="psg-one psg-info"
+        padding="10px 10px"
+        border-top="1px solid #ccc"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px dashed #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="24px">
+            <div class="left-area" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-member.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:baseline;"
+              /><span>&nbsp;</span>
+              <b style="font-size:16px;">yuxuanzhai</b>
+            </div>
+            <div class="right-area" align="right" style="display:inline-block;width:100%;">
+              <div class="ticket-no" style="display:inline-block;width:100%;">
+                <b>ET：</b>
+                <span>7844495720915</span>
+              </div>
+              <div class="ticket-status" style="display:inline-block;width:100%;">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked.png"
+                  width="28"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:28px;vertical-align:basaeline;"
+                /><span>&nbsp;</span>
+                <font color="#199000">check-in</font>
+              </div>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        css-class="psg-one psg-detail"
+        padding="10px 10px"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px solid #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="36px">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-seat.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <b><font color="#592e91">Business class (J)</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-down.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>seat </span>
+              <b><font color="#333">48A</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;line-height:20px;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-cabin-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Cabin Baggage </span>
+              <b><font color="#333">1PC(7kg/PC)</font></b>
+              <b style="display:inline-block;margin-left:20px;"><a href="javascript:;"><font color="#eb0000">Baggage notice</font></a></b>
+            </div>
+            <br class="hidden-br" style="display: none;">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Checked baggage </span>
+              <b><font color="#333">10kg</font></b>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-section>
+      <mj-column><mj-spacer height="20px" /></mj-column>
+    </mj-section>
+    
+    <mj-section
+      css-class="flight-item flight-info"
+      background-url="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/bg-linear.jpg"
+      background-repeat="no-repeat"
+      background-size="100% 100%"
+      padding="20px 10px"
+    >
+      <mj-group>
+        <mj-column css-class="left-line" mj-class="middle-col" width="38%">
+          <mj-table color="#fff" line-height="28px">
+            <tr>
+              <td width="30">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-flight.png"
+                  width="20"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:20px;vertical-align:middle;"
+                />
+              </td>
+              <td class="flight-desc" style="font-size: 14px;">
+                <span>Flight 1</span>
+              </td>
+            </tr>
+            <tr>
+              <td width="30"></td>
+              <td style="font-size: 14px;">
+                <span class="flight-sub">HX606</span>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column css-class="right-line" mj-class="middle-col" width="62%">
+          <mj-text color="#fff" line-height="28px">
+            <div class="line-msg from-area" style="display:inline-block;width:100%;">
+              <b class="flight-desc">BeiJing(PEK)</b><br>
+              <span class="flight-sub">2019/03/22 12:30am</span>
+            </div>
+            <div class="line-msg arrow" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-arrow.png"
+                width="18"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:18px;vertical-align:middle;"
+              />
+            </div>
+            <div class="line-msg to-area" style="display:inline-block;width:100%;">
+              <b class="flight-desc">Auckland(AKL)</b><br>
+              <span class="flight-sub">2019/03/22 12:30am</span>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-wrapper css-class="flight-item flight-passenger" background-color="#fff" padding="10px 10px">
+      
+      <mj-section
+        css-class="psg-one psg-info"
+        padding="10px 10px"
+        border-top="1px solid #ccc"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px dashed #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="24px">
+            <div class="left-area" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-member.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:baseline;"
+              /><span>&nbsp;</span>
+              <b style="font-size:16px;">yuxuanzhai</b>
+            </div>
+            <div class="right-area" align="right" style="display:inline-block;width:100%;">
+              <div class="ticket-no" style="display:inline-block;width:100%;">
+                <b>ET：</b>
+                <span>7844495720915</span>
+              </div>
+              <div class="ticket-status" style="display:inline-block;width:100%;">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked.png"
+                  width="28"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:28px;vertical-align:basaeline;"
+                /><span>&nbsp;</span>
+                <font color="#199000">check-in</font>
+              </div>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        css-class="psg-one psg-detail"
+        padding="10px 10px"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px solid #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="36px">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-seat.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <b><font color="#592e91">Business class (J)</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-down.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>seat </span>
+              <b><font color="#333">48A</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;line-height:20px;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-cabin-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Cabin Baggage </span>
+              <b><font color="#333">1PC(7kg/PC)</font></b>
+              <b style="display:inline-block;margin-left:20px;"><a href="javascript:;"><font color="#eb0000">Baggage notice</font></a></b>
+            </div>
+            <br class="hidden-br" style="display: none;">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Checked baggage </span>
+              <b><font color="#333">10kg</font></b>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-wrapper css-class="flight-item flight-passenger" background-color="#fff" padding="10px 10px">
+      
+      <mj-section
+        css-class="psg-one psg-info"
+        padding="10px 10px"
+        border-top="1px solid #ccc"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px dashed #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="24px">
+            <div class="left-area" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-member.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:baseline;"
+              /><span>&nbsp;</span>
+              <b style="font-size:16px;">yuxuanzhai</b>
+            </div>
+            <div class="right-area" align="right" style="display:inline-block;width:100%;">
+              <div class="ticket-no" style="display:inline-block;width:100%;">
+                <b>ET：</b>
+                <span>7844495720915</span>
+              </div>
+              <div class="ticket-status" style="display:inline-block;width:100%;">
+                <img
+                  src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked.png"
+                  width="28"
+                  style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:28px;vertical-align:basaeline;"
+                /><span>&nbsp;</span>
+                <font color="#199000">check-in</font>
+              </div>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        css-class="psg-one psg-detail"
+        padding="10px 10px"
+        border-left="1px solid #ccc"
+        border-right="1px solid #ccc"
+        border-bottom="1px solid #ccc"
+      >
+        <mj-column>
+          <mj-text color="#555" line-height="36px">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-seat.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <b><font color="#592e91">Business class (J)</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-down.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>seat </span>
+              <b><font color="#333">48A</font></b>
+            </div>
+            <div class="detail-elem" style="display:inline-block;width:100%;line-height:20px;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-cabin-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Cabin Baggage </span>
+              <b><font color="#333">1PC(7kg/PC)</font></b>
+              <b style="display:inline-block;margin-left:20px;"><a href="javascript:;"><font color="#eb0000">Baggage notice</font></a></b>
+            </div>
+            <br class="hidden-br" style="display: none;">
+            <div class="detail-elem" style="display:inline-block;width:100%;">
+              <img
+                src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/mail-checked-baggage.png"
+                width="14"
+                style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:14px;vertical-align:middle;"
+              /><span>&nbsp;</span>
+              <span>Checked baggage </span>
+              <b><font color="#333">10kg</font></b>
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-section>
+      <mj-column><mj-spacer height="20px" /></mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column><mj-spacer height="20px" container-background-color="#F8F1F4" /></mj-column>
+    </mj-section>
+    <mj-section css-class="footer-info info-1" mj-class="footer-wraper">
+      <mj-column>
+        <mj-text font-weight="600" color="#333" mj-class="footer-col">The electronic boarding pass information for reservation will be sent to your email 48 hours before the flight takes off.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="footer-info info-2" mj-class="footer-wraper">
+      <mj-column>
+        <mj-text mj-class="footer-col">
+          <span>Check the check-in terms.</span>
+          <b><a href="javascript:;"><font color="#eb0000">Click here</font></a></b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="footer-info info-3" mj-class="footer-wraper">
+      <mj-column>
+        <mj-text mj-class="footer-col">
+          <span>For check-in status, please enter the ticket number through the online pre-check-in window to see more details.</span>
+          <b><a href="javascript:;"><font color="#eb0000">Click here</font></a></b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="footer-info info-4" mj-class="footer-wraper">
+      <mj-column>
+        <mj-text mj-class="footer-col">
+          <span>Passengers who have booked for check-in but have not taken seats can choose their seats again through this link.</span>
+          <b><a href="javascript:;"><font color="#eb0000">Click here</font></a></b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column><mj-spacer height="20px" container-background-color="#F8F1F4" /></mj-column>
+    </mj-section>
+
+    <mj-section css-class="footer-logo">
+      <mj-column>
+        <mj-text mj-class="footer-col" padding="50px 10px">
+          <img
+            src="https://yuuuki.gitee.io/tools.sitebuilder/demo.normal/images/img_hka_logo2.png"
+            width="190"
+            style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;width:190px;vertical-align:middle;"
+          />
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
