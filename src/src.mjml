@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-breakpoint width="400px" />
+    <mj-breakpoint width="1px" />
     <mj-attributes>
       <mj-class name="textTitle"
         align="center"
@@ -8,6 +8,9 @@
       />
       <mj-class name="nopadding"
         padding="0px"
+      />
+      <mj-class name="w400"
+        width="400px"
       />
     </mj-attributes>
     <mj-style>
@@ -53,12 +56,16 @@
       .space_line{
         height:10px
       }
+      body{
+        width: 400px;
+        margin: 0 auto;
+      }
     </mj-style>
   </mj-head>
-  <mj-body mj-class="nopadding">
+  <mj-body mj-class="nopadding w400">
     <mj-section>
       <mj-column width="400px">
-        <mj-image padding="0px" src="./head.png" alt="hongkongairline" />
+        <mj-image width="400px" padding="0px" src="./head.png" alt="hongkongairline" />
       </mj-column>
     </mj-section>
     <mj-section mj-class="nopadding">
@@ -68,9 +75,9 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section mj-class="nopadding">
+    <mj-section mj-class="nopadding w400">
         <mj-column width="200px">
-          <mj-image padding="15px" src="./QRCode.png" alt="QRCode" />
+          <mj-image width="200px" padding="15px" src="./QRCode.png" alt="QRCode" />
         </mj-column>
         <mj-column width="200px">
           <mj-text padding="10px 0 0 0">
