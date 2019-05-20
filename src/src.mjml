@@ -62,7 +62,7 @@
       }
     </mj-style>
   </mj-head>
-  <mj-body mj-class="nopadding w400">
+  <mj-body mj-class="nopadding w400" background-color="#f7f7f7">
     <mj-section>
       <mj-column width="400px">
         <mj-image width="400px" padding="0px" src="./head.png" alt="hongkongairline" />
@@ -76,6 +76,7 @@
       </mj-column>
     </mj-section>
     <mj-section mj-class="nopadding w400">
+      <mj-group>
         <mj-column width="200px">
           <mj-image width="200px" padding="15px" src="./QRCode.png" alt="QRCode" />
         </mj-column>
@@ -105,6 +106,7 @@
             </table>
           </mj-text>
         </mj-column>
+      </mj-group>
     </mj-section>
     <mj-section mj-class="nopadding">
       <mj-column width="400px">
